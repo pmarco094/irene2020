@@ -6,83 +6,183 @@
 -->
 <html>
 	<head>
-		<title>Escape room irene</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
+		<link rel="icon" href="https://f1.pngfuel.com/png/93/154/412/cartoon-birthday-cake-emoji-birthday-emoticon-cupcake-art-emoji-smiley-party-png-clip-art.png">
+			<title>Escape room irene</title>
+			<meta charset="utf-8" />
+			<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+			<link rel="stylesheet" href="assets/css/main.css" />
+			<noscript>
+				<link rel="stylesheet" href="assets/css/noscript.css" />
+			</noscript>
+		</head>
+		<body class="is-preload" onload="load();">
 
-		<!-- Header -->
 			<header id="header">
 				<a  class="title">Prueba 1</a>
 			</header>
 
-		<!-- Wrapper -->
 			<div id="wrapper">
 
-
-				<!-- Main -->
-					<section id="main" class="wrapper">
-						<div class="inner">
-							<h1 class="major">Despierta!&#128564;</h1>
-							<p style="text-align:center;"><img src="images/Prueba1.jpeg" alt="" height="300" width="500"></p>
-							<p>7:40 AM<br /> 
+				<section id="main" class="wrapper">
+					<div class="inner">
+						<h1 class="major">Despierta!&#128564;</h1>
+						<p style="text-align:center;">
+							<img src="images/Prueba1.jpeg" alt="" height="300" width="500"/>
+						</p>
+						<p>7:40 AM<br /> 
 							Riiing Riiing. <br /> 
 							Te ha sonado la alarma del movil. Como cada mañana, después de mirar twitter, whatsapp e instagram, abres el correo:</p>
-							
-							<div class="card">
-								<img style="display: block" src="images/Prueba1_MAIL_top.jpg"  alt="">
-								<a href="#" onClick="MyWindow=window.open('Prueba1_PASS_1_PRUEBA.html','MyWindow','width=600,height=300'); return false;">
-								<img style="display: block"  src="images/Prueba1_MAIL_1.jpg"  alt=""></a>
-								<a href="#" onClick="MyWindow=window.open('Prueba1_PASS_2.html','MyWindow','width=600,height=300'); return false;">
-								<img style="display: block" src="images/Prueba1_MAIL_2.jpg"  alt=""></a>
-								<a href="#" onClick="MyWindow=window.open('Prueba1_PASS_3.html','MyWindow','width=600,height=300'); return false;">
-								<img style="display: block" src="images/Prueba1_MAIL_3.jpg"  alt=""></a>
-								<img style="display: block" src="images/Prueba1_MAIL_bottom.jpg"  alt=""></p>
-							</div>
-					</section>
 
+						<div class="card">
+							<img style="display: block" src="images/Prueba1_MAIL_top.jpg"  alt=""/>
+							<img  style="display: block" src="images/Prueba1_MAIL_1.jpg" alt="" onClick="m1();"  />
+							<img  style="display: block" src="images/Prueba1_MAIL_2.jpg" alt="" onClick="m2();"  />
+
+							<img  style="display: block" src="images/Prueba1_MAIL_3.jpg" alt="" onClick="m3();"  />
+							<img style="display: block" src="images/Prueba1_MAIL_bottom.jpg"  alt="" />
+						</div>
 					</div>
-					
-					<input type="text" name="password" value="" id="password" placeholder="Password" />
-					</p>
-					<p>
-						
-					</p>
-					<p class="submit">
-						<input type="submit" name="commit" value="Siguiente nivel" onclick="validate();" />
-					</p>
-					<script>
-						function validate() {
-							if ((document.getElementById("password").value == "CUMPLEGUAY")||(document.getElementById("password").value == "X")) {
-								alert("Password correcto!");
-								window.open('Prueba2.html',"_self");
-							 } else {
-								alert("Password erroneo");
-							}
-						}
-						
+								<p class="submit">
+				<input type="submit" name="commit"  id="botonpasar" value="Siguiente nivel" onclick="validate();" />
+			</p>
+				</section>
 
-					</script>
-		<!-- Footer -->
+			</div>
+
+			<!-- Footer -->
 			<footer id="footer" class="wrapper alt">
 				<div class="inner">
 					<ul class="menu">
-						<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+						<li>&copy; Untitled. All rights reserved.</li>
+						<li>Design: <a href="http://html5up.net">HTML5 UP</a>
+						</li>
 					</ul>
 				</div>
 			</footer>
+		</body>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+		<div id="myModal" class="modal">
 
-	</body>
+			<!-- Modal content -->
+			<div class="modal-content">
+				<span onclick="document.getElementById('myModal').style.display='none'"
+      class="close">&times;</span>
+				<legend>Este correo requiere contraseña de acceso:</legend>
+				<input type="text2" name="passwordoms" value="" id="passwordoms" placeholder="Password"  /></p>
+			<button type="button" class="buttonOMS" onclick="validateform();" >Submit</button>
+		</div>
+	</div>
+
+
+	<div id="myModal2" class="modal">
+
+		<!-- Modal content -->
+		<div class="modal-content">
+			<span onclick="document.getElementById('myModal2').style.display='none'"
+      class="close">&times;</span>
+
+			<h6>
+				<font color="black">Reunión Unidad docente</font>
+			</h6>
+			<form>
+				<legend>Hola,</br> Como representante de R1 necesitamos que atiendas una reunión este martes, dia 21.El objetivo será daros a conocer l<font color="red">a</font> nueva plataforma de la OM<font color="red">S</font> para el anuncio de comunic<font color="red">a</font>
+				<font color="red">c</font>iones gubernamentales. </br>La reu<font color="red">n</font>ión s<font color="red">e</font> realizará m<font color="red">e</font>diante <font color="red">l</font>a <font color="red">p</font>lataforma ZOOM a las 18:00. Quizá a las 18:30, las 19:00, o igual ni la hace<font color="red">m</font>os y te enviamos <font color="red">u</font>n <font color="red">c</font>orreo. No sé.</br>Atentamente,U.D.H.U.M.S.</legend>
+</form>
+</div>
+</div>
+
+
+
+<div id="myModal3" class="modal">
+
+	<!-- Modal content -->
+	<div class="modal-content">
+		<span onclick="document.getElementById('myModal3').style.display='none'"
+      class="close">&times;</span>
+
+		<h6>
+			<font color="black">Guardia Martes</font>
+		</h6>
+		<form>
+			<fieldset>
+				<legend>Hola Irene,
+				</p>
+		He cambiado la guardia de ayer con Paco. Pd; he recibido un correo extraño de la OMS, pero no tengo la contraseña; sabes que puede ser?
+			</p>
+		Esta gente parece ir hacia atrás en vez de hacia adelante...
+		</legend>
+	</form>
+</div>
+</div>
+
+
+<div id="myModal4" class="modal">
+
+	<!-- Modal content -->
+	<div class="modal-content">
+		<span onclick="document.getElementById('myModal4').style.display='none'"
+      class="close">&times;</span>
+
+		<h6>
+			<font color="black">COMUNICADO CONFIDENCIAL</font>
+		</h6>
+		<form>
+			<fieldset>
+				  <legend>La OMS ha declarado el fin de la pandemia. El calor de los ultimos dias ha acabado magicamente con el virus.</br>
+		Es muy importante mantener esto en secreto durante unos dias, para evitar tumultos. Cualquiera que informe sobre este hecho sin autorización será perseguido por las autoridades.</br></legend>
+	</form>
+</div>
+</div>
+
+<script>
+
+
+				var modal = document.getElementById("myModal");
+				var modal2 = document.getElementById("myModal2");
+				var modal3 = document.getElementById("myModal3");
+				var modal4 = document.getElementById("myModal4");
+	
+				function m1() {
+				   modal.style.display = "block";
+				}
+
+					function m2() {
+				   modal2.style.display = "block";
+				}
+
+					function m3() {
+				   modal3.style.display = "block";
+				}
+
+				function validate() {
+						window.open('Prueba2.html',"_self");
+				}
+
+    function validateform() {
+		if ((document.getElementById("passwordoms").value == "CUMPLEENCASA")||(document.getElementById("passwordoms").value == "X")) {
+			document.getElementById('myModal').style.display='none';
+			document.getElementById('myModal4').style.display='block';
+			document.getElementById("botonpasar").style.display = "block";
+         } else {
+            alert("Password erroneo");
+        }
+    }
+	
+	function load(){
+	document.getElementById("botonpasar").style.display = "none";
+	}
+
+</script>
+
+
+<!-- Scripts -->
+<script src="assets/js/jquery.min.js"/>
+<script src="assets/js/jquery.scrollex.min.js"/>
+<script src="assets/js/jquery.scrolly.min.js"/>
+<script src="assets/js/browser.min.js"/>
+<script src="assets/js/breakpoints.min.js"/>
+<script src="assets/js/util.js"/>
+<script src="assets/js/main.js"/>
+
+
 </html>
