@@ -1,0 +1,22 @@
+Este correo requiere contraseña de acceso:
+<input type="text" name="password" value="" id="password" placeholder="Password" />
+</p>
+<p>
+    
+</p>
+<p class="submit">
+    <input type="submit" name="commit" value="Login" onclick="validate();" />
+    <button type="reset" value="Clear">Clear</button>
+</p>
+<script>
+    function validate() {
+		if (document.getElementById("password").value == "teadoro") {
+            alert("Password correcto!");
+			window.open('Prueba1_PASS_1.html','MyWindow','width=600,height=300');
+         } else {
+            alert("Password erroneo");
+        }
+    }
+	
+
+</script>

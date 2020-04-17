@@ -1,0 +1,136 @@
+<!DOCTYPE HTML>
+<!--
+	Hyperspace by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Escape room irene</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript>
+			<link rel="stylesheet" href="assets/css/noscript.css" />
+		</noscript>
+	</head>
+	<body class="is-preload" onload="myFunction()" >
+		<!-- Header -->
+		<header id="header">
+			<a href="index.html" class="title">Prueba 3</a>
+		</header>
+
+		<!-- Wrapper -->
+		<div id="wrapper">
+
+
+			<!-- Main -->
+			<section id="main" class="wrapper">
+				<div class="inner">
+
+					<p>	Oh, no! </p>
+
+					<p>Tus tíos y tus primas aún siguen dormidos. Tienes que poner la alarma de su despertador pero para ello, tienes que insertar primero una contraseña.</p> 
+					<p style="line-height:0.25;text-indent : 5em;">¡Qué lástima que no recuerdes cómo era!</p> 
+
+					<p >Sólo consigues recordar que:</p>
+					<p style="line-height:0.25;text-indent : 5em;" >&#9;1.	Los primeros dígitos eran las iniciales de la carrera que estudio tu tío David (IQ).</p>
+					<p style="line-height:0.25;text-indent : 5em;">2.	Los siguientes 3 dígitos formaban parte del número de teléfono de la casa de tu tío Miguel y tu tía Mabel.</p>
+					<p  style="line-height:0.25;text-indent : 5em;">3.	La contraseña seguía con el apodo que utilizaba tu madre para referirse a tu tía Sonia (chacha).</p>
+					<p style="line-height:0.25;text-indent : 5em;">4.	Los últimos dígitos de la contraseña eran el curso y la clase a la que iban tu prima Andrea (1º) y tu prima  Sabina (2º).</p>
+				</div>
+				<input 	type="text" name="password" value="" id="password" placeholder="Password" />
+
+				<p class="submit"/> 
+				<input type="submit" name="commit" value="Siguiente nivel" onclick="validate();" />
+			</section>	
+		</div>
+
+
+		<!-- Footer -->
+		<footer id="footer" class="wrapper alt">
+			<div class="inner">
+				<ul class="menu">
+					<li>&copy; Untitled. All rights reserved.</li>
+					<li>Design: <a href="http://html5up.net">HTML5 UP</a>
+					</li>
+				</ul>
+			</div>
+		</footer>
+	</body>
+
+
+	<!-- The Modal -->
+	<div id="myModal" class="modal">
+
+		<!-- Modal content -->
+		<div class="modal-content">
+			<span class="close">&times;</span>
+
+			<h1 class="major">Felicidades, tu family ya está en la party!&#129395;</h1>
+			<!-- Main -->
+			<p style="text-align:center;"/>
+			<video width="640" height="480" autoplay="true"  controls>
+				<source src=”http://techslides.com/demos/sample-videos/small.ogv” type=video/ogg>
+				<source src="videos/tios/Project.mp4" type=video/mp4>
+			</video>
+			<ul class="actions"/>
+			<li>
+				<a href="Prueba4.html" class="button">Siguiente prueba!</a>
+			</li>
+		</div>
+	</div>
+
+
+
+
+
+	<script>
+			function validate() {
+			if ((document.getElementById("password").value == "IQ406CHACHA2D3B")||(document.getElementById("password").value == "X")) {
+			modal.style.display = "block";
+			} else {
+			alert("Password erroneo");
+			}
+			}
+
+			function myFunction() {
+			modal.style.display = "none";
+			}
+
+
+
+			// Get the modal
+			var modal = document.getElementById("myModal");
+
+
+			// Get the <span> element that closes the modal
+			var span = document.getElementsByClassName("close")[0];
+
+			// When the user clicks on the button, open the modal
+
+
+			// When the user clicks on <span> (x), close the modal
+			pan.onclick = function() {
+			modal.style.display = "none";
+					}
+
+			// When the user clicks anywhere outside of the modal, close it
+			window.onclick = function(event) {
+			if (event.target == modal) {
+			modal.style.display = "none";
+			}
+			}
+			</script>
+			<script src="assets/js/jquery.min.js"/>
+			<script src="assets/js/jquery.scrollex.min.js"/>
+			<script src="assets/js/jquery.scrolly.min.js"/>
+			<script src="assets/js/browser.min.js"/>
+			<script src="assets/js/breakpoints.min.js"/>
+			<script src="assets/js/util.js"/>
+			<script src="assets/js/main.js"/>
+
+
+
+
+		</html>

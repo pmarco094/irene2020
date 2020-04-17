@@ -1,0 +1,187 @@
+<!DOCTYPE HTML>
+<!--
+	Hyperspace by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Escape room irene</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript>
+			<link rel="stylesheet" href="assets/css/noscript.css" />
+		</noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+		<header id="header">
+			<a href="index.html" class="title">Prueba 8</a>
+		</header>
+
+		<!-- Wrapper -->
+		<div id="wrapper">
+
+
+			<!-- Main -->
+			<section id="main" class="wrapper">
+				<div class="inner">
+					<h1 class="major">Latigazo cervical?</h1>
+
+
+					<p style="text-align:center;"/>
+					<p>Encuentra las 8 diferencias para despertar a tus coleguis de disfraz!:</p>
+
+
+					<div class="row2">
+						<div class="column2">
+							<p style="text-align:center;">
+								<img src="images/P8/Original.jpeg" alt=""  >
+								</p>
+							</div>
+							<div class="column2">
+								<div id="table" style="text-align:right;">
+									<div id="row1" style="display: table-row;">
+										<div id="1" class="tile1_p8" onClick="clickTile_1();"></div>
+										<div id="2" class="tile2_p8" onClick="clickTile_2();"></div>
+										<div id="3" class="tile3_p8" onClick="clickTile_3();"></div>
+										<div id="4" class="tile4_p8" onClick="clickTile_4();"></div>
+									</div>
+									<div id="row2" style="display: table-row;">
+										<div id="5" class="tile5_p8" onClick="clickTile_5();"></div>
+										<div id="6" class="tile6_p8" onClick="clickTile_6();"></div>
+										<div id="7" class="tile7_p8" onClick="clickTile_7();"></div>
+										<div id="8" class="tile8_p8" onClick="clickTile_4();"></div>
+									</div>
+									<div id="row3" style="display: table-row;">
+										<div id="9" class="tile9_p8" onClick="clickTile_9();"></div>
+										<div id="10" class="tile10_p8" onClick="clickTile_10();"></div>
+										<div id="11" class="tile11_p8" onClick="clickTile_11();"></div>
+										<div id="12" class="tile12_p8" onClick="clickTile_12();"></div>
+									</div>
+									<div id="row4" style="display: table-row;">
+										<div id="13" class="tile13_p8" onClick="clickTile_13();"></div>
+										<div id="14" class="tile14_p8" onClick="clickTile_14();"></div>
+										<div id="15" class="tile15_p8" onClick="clickTile_15();"></div>
+										<div id="16" class="tile16_p8" onClick="clickTile_16();"></div>
+									</div>
+								</div>
+
+							</div>
+						</div>
+
+						<p class="submit">
+							<input type="submit" name="commit" value="Siguiente nivel" onclick="validate();" />
+						</p>
+
+
+						<!-- Sliding Puzzle by 101Computing - www.101computing.net/sliding-puzzle/-->
+
+					</div>
+				</section>
+			</p>
+
+			<script>
+
+						function clickTile_1() {
+						  document.getElementById(1).className = "tile1_p8_m";
+						}
+
+						function clickTile_2() {
+						  document.getElementById(2).className = "tile2_p8_m";
+						}
+
+						function clickTile_3() {
+						  document.getElementById(7).className = "tile7_p8_m";
+							document.getElementById(3).className = "tile3_p8_m";
+						}
+
+						function clickTile_4() {
+						  document.getElementById(4).className = "tile4_p8_m";
+						   document.getElementById(8).className = "tile8_p8_m";
+						}
+
+						function clickTile_5() {
+						  document.getElementById(5).className = "tile5_p8_m";
+						}
+
+						function clickTile_6() {
+						document.getElementById(6).className = "tile6_p8_m";
+						}
+
+						function clickTile_7() {
+						  document.getElementById(7).className = "tile7_p8_m";
+							document.getElementById(3).className = "tile3_p8_m";
+						}
+
+						function clickTile_8() {
+						  document.getElementById(8).className = "tile8_p8_m";
+						}
+
+						function clickTile_9() {
+
+						}
+
+						function clickTile_10() {
+
+						}
+
+						function clickTile_11() {
+						  document.getElementById(11).className = "tile11_p8_m";
+						}
+
+						function clickTile_12() {
+						  document.getElementById(12).className = "tile12_p8_m";
+						}
+
+						function clickTile_13() {
+						  document.getElementById(13).className = "tile13_p8_m";
+						}
+
+						function clickTile_14() {
+						  document.getElementById(14).className = "tile14_p8_m";
+							document.getElementById(10).className = "tile10_p8_m";
+						}
+
+						function clickTile_15() {
+						  document.getElementById(15).className = "tile15_p8_m";
+						}
+
+						function clickTile_16() {
+						  document.getElementById(16).className = "tile16_p8_m";
+						}
+
+						function validate() {
+						 if ( document.getElementById(3).className=="tile3_p8_m" && document.getElementById(4).className=="tile4_p8_m"&& document.getElementById(5).className=="tile5_p8_m"&& document.getElementById(6).className=="tile6_p8_m"&& document.getElementById(11).className=="tile11_p8_m"&& document.getElementById(13).className=="tile13_p8_m"&& document.getElementById(15).className=="tile15_p8_m"){
+								window.open('Prueba8_Felicitacion.html',"_self");
+						 } else {
+								alert("No has completado el trabajo!");
+							}
+						}
+			</script>
+
+
+			<!-- Footer -->
+			<footer id="footer" class="wrapper alt" >
+				<div class="inner">
+					<ul class="menu">
+						<li>&copy; Untitled. All rights reserved.</li>
+						<li>Design: <a href="http://html5up.net">HTML5 UP</a>
+						</li>
+					</ul>
+				</div>
+			</footer>
+
+			<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"/>
+			<script src="assets/js/jquery.scrollex.min.js"/>
+			<script src="assets/js/jquery.scrolly.min.js"/>
+			<script src="assets/js/browser.min.js"/>
+			<script src="assets/js/breakpoints.min.js"/>
+			<script src="assets/js/util.js"/>
+			<script src="assets/js/main.js"/>
+
+		</body>
+	</html>

@@ -1,0 +1,127 @@
+<!DOCTYPE HTML>
+<!--
+	Hyperspace by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Escape room irene</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript>
+			<link rel="stylesheet" href="assets/css/noscript.css" />
+		</noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+		<header id="header">
+			<a href="index.html" class="title">Prueba 4</a>
+		</header>
+
+		<!-- Wrapper -->
+		<div id="wrapper">
+
+
+			<!-- Main -->
+			<section id="main" class="wrapper">
+				<div class="inner">
+					<h1 class="major">Que seria de la fiesta sin tus amigos? &#x1F525;</h1>
+					<p style="text-align:center;"/>
+					<p>Ha llegado el momento de contactar con tus amigos para liberarles de la cuarentena... evidentemente necesitas un codigo y ya sabes cual es el juego estrella en el equipo &#x1F609;<br />
+					Te han dejado una pista:</p>
+
+					<p style="text-align:center;">
+						<iframe src="https://drive.google.com/file/d/1l81mQUjcR6spZR6DC3BuFJmX8omzXezf/preview" allow='autoplay' width="640" height="480"></iframe>
+							</p>
+							<div>
+								<div><div>
+									<section id="two" class="wrapper mesa fade-up"    style="text-align:center;">
+									<center><div id="table" style="display: table;">
+											<div id="row1" style="display: table-row;">
+												<div id="1" class="tile1_p4" onClick="clickTile(1);"></div>
+												<div id="2" class="tile2_p4" onClick="clickTile(2);"></div>
+												<div id="3" class="tile3_p4" onClick="clickTile(3);"></div>
+												<div id="4" class="tile4_p4" onClick="clickTile(4);"></div>
+												<div id="5" class="tile5_p4" onClick="clickTile_dead(5);"></div>
+											</div>
+											<div id="row2" style="display: table-row;">
+												<div id="6" class="tile6_p4" onClick="clickTile(6);"></div>
+												<div id="7" class="tile7_p4" onClick="clickTile_ok(7);"></div>
+												<div id="8" class="tile8_p4" onClick="clickTile(8);"></div>
+												<div id="9" class="tile9_p4" onClick="clickTile(9);"></div>
+												<div id="10" class="tile10_p4" onClick="clickTile_ok(10);"></div>
+											</div>
+											<div id="row3" style="display: table-row;">
+												<div id="11" class="tile11_p4" onClick="clickTile(11);"></div>
+												<div id="12" class="tile12_p4" onClick="clickTile_ok(12);"></div>
+												<div id="13" class="tile13_p4" onClick="clickTile(13);"></div>
+												<div id="14" class="tile14_p4" onClick="clickTile(14);"></div>
+												<div id="15" class="tile15_p4" onClick="clickTile(15);"></div>
+											</div>
+											<div id="row4" style="display: table-row;">
+												<div id="16" class="tile16_p4" onClick="clickTile(16);"></div>
+												<div id="17" class="tile17_p4" onClick="clickTile(17);"></div>
+												<div id="18" class="tile18_p4" onClick="clickTile(18);"></div>
+												<div id="19" class="tile19_p4" onClick="clickTile(19);"></div>
+												<div id="20" class="tile20_p4" onClick="clickTile_ok(20);"></div>
+											</div>
+											<div id="row5" style="display: table-row;">
+												<div id="21" class="tile21_p4" onClick="clickTile_ok(21);"></div>
+												<div id="22" class="tile22_p4" onClick="clickTile(22);"></div>
+												<div id="23" class="tile23_p4" onClick="clickTile(23);"></div>
+												<div id="24" class="tile24_p4" onClick="clickTile(24);"></div>
+												<div id="25" class="tile25_p4" onClick="clickTile(25);"></div>
+											</div>
+										</div>
+
+									</section>				
+								</div></div>
+						</section>	
+
+						<script language="javascript">
+						
+						function clickTile_dead(x) {
+							 document.getElementById(x).className="tile_dead" 
+						}
+						
+						function clickTile_ok(x) {
+							 document.getElementById(x).className="tile_ok" 
+							 
+							 if (document.getElementById("7").className=="tile_ok" && document.getElementById("10").className=="tile_ok" && document.getElementById("12").className=="tile_ok" && document.getElementById("20").className=="tile_ok" && document.getElementById("21").className=="tile_ok" ){
+							 	alert("Lo has conseguido!!");
+								window.open('Prueba4_Felicitacion.html',"_self");
+							 }
+						}
+						
+						function clickTile(x) {
+							 document.getElementById(x).className="tile_lost" 
+						}
+						
+
+						</script>
+
+						<!-- Footer -->
+						<footer id="footer" class="wrapper alt" >
+							<div class="inner">
+								<ul class="menu">
+									<li>&copy; Untitled. All rights reserved.</li>
+									<li>Design: <a href="http://html5up.net">HTML5 UP</a>
+									</li>
+								</ul>
+							</div>
+						</footer>
+
+						<!-- Scripts -->
+						<script src="assets/js/jquery.min.js"/>
+						<script src="assets/js/jquery.scrollex.min.js"/>
+						<script src="assets/js/jquery.scrolly.min.js"/>
+						<script src="assets/js/browser.min.js"/>
+						<script src="assets/js/breakpoints.min.js"/>
+						<script src="assets/js/util.js"/>
+						<script src="assets/js/main.js"/>
+
+					</body>
+				</html>
