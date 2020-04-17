@@ -121,11 +121,18 @@ function clickTile(row,column) {
 								</p>
 								<script>
 						function validate() {
-						   if ( document.getElementById("cell11").className=="tile1" && document.getElementById("cell12").className=="tile2" && document.getElementById("cell21").className=="tile4" && document.getElementById("cell31").className=="tile7" && document.getElementById("cell32").className=="tile8" && document.getElementById("password").value == "GRANERO") {
+						 if ( document.getElementById("password").value == "X") {
+						 window.open('Prueba6_Felicitacion.html',"_self");}
+						 }
+						   if ( document.getElementById("cell11").className=="tile1" && document.getElementById("cell12").className=="tile2" && document.getElementById("cell21").className=="tile4" && document.getElementById("cell31").className=="tile7" && document.getElementById("cell32").className=="tile8") {
+								if (document.getElementById("password").value == "GRANERO"){
 								alert("Password correcto!");
-								window.open('Prueba6_Felicitacion.html',"_self");
+								window.open('Prueba6_Felicitacion.html',"_self");}
+								else{
+								alert("Errorrr, busca la clave");
+								}
 							 } else {
-								alert("Password erroneo - No has completado el puzzle!");
+							alert("No has completado el puzzle!");
 							}
 						}
 

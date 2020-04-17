@@ -60,58 +60,15 @@
 		</body>
 		
 		
-		<!-- The Modal -->
-		<div id="myModal" class="modal">
-
-			<!-- Modal content -->
-		<div class="modal-content">
-			<span class="close">&times;</span>
-
-			<p style="text-align:center;"/>
-			<video width="640" height="480" autoplay="true"  controls>
-				<source src=”http://techslides.com/demos/sample-videos/small.ogv” type=video/ogg>
-					<source src="videos/elena.mp4" type=video/mp4>
-					</video>
-					<ul class="actions"/>
-					<li>
-						<a href="Prueba8.html" class="button">Siguiente prueba!</a>
-					</li>
-				</div>
-			</div>
-
 			<script>
 						function validate() {
 							if ((document.getElementById("password").value == "MONTENEGRO")||(document.getElementById("password").value == "X")) {
-		modal.style.display = "block";
+								window.open('Prueba7_Felicitacion.html',"_self");
 							 } else {
-								alert("Password erroneo");
+								alert("Errorrr");
 							}
 						}
-			function myFunction() {
-			modal.style.display = "none";
-			}
-
-			// Get the modal
-			var modal = document.getElementById("myModal");
-
-
-			// Get the <span> element that closes the modal
-			var span = document.getElementsByClassName("close")[0];
-
-			// When the user clicks on the button, open the modal
-
-
-			// When the user clicks on <span> (x), close the modal
-			pan.onclick = function() {
-			modal.style.display = "none";
-					}
-
-			// When the user clicks anywhere outside of the modal, close it
-			window.onclick = function(event) {
-			if (event.target == modal) {
-			modal.style.display = "none";
-			}
-			}
+			
 
 					</script>
 
