@@ -14,7 +14,7 @@
 			<link rel="stylesheet" href="assets/css/noscript.css" />
 		</noscript>
 	</head>
-	<body class="is-preload"  onload="myFunction()" >
+	<body class="is-preload"   >
 
 		<!-- Header -->
 		<header id="header">
@@ -28,9 +28,9 @@
 
 					<!-- Main -->
 					<p style="text-align:center;">
-						<video width="640" height="480" controls>
+						<video width="640" height="480" controls autoplay>
 							<source src=”http://techslides.com/demos/sample-videos/small.ogv” type=video/ogg>
-								<source src="videos/RazDani_Trim.mp4" type=video/mp4>
+								<source src="videos/RazDani.mp4" type=video/mp4>
 								</video>
 							</p>
 						</p>
@@ -62,40 +62,19 @@
 	</body>
 
 
-	<!-- The Modal -->
-	<div id="myModal" class="modal">
-
-		<!-- Modal content -->
-		<div class="modal-content">
-			<span class="close">&times;</span>
-
-			<h1 class="major">Felicidades!	&#x1F388;</h1>
-			<!-- Main -->
-			<p style="text-align:center;"/>
-			<video width="640" height="480" autoplay="true"  controls>
-				<source src=”http://techslides.com/demos/sample-videos/small.ogv” type=video/ogg>
-					<source src="videos/Laura.mp4" type=video/mp4>
-					</video>
-					<ul class="actions"/>
-					<li>
-						<a href="Prueba6.html" class="button">Siguiente prueba!</a>
-					</li>
-				</div>
-			</div>
 
 			<!-- Scripts -->
 			<script>
 						function validate() {
 							if ((document.getElementById("password").value == "BELLA CIAO")||(document.getElementById("password").value == "X")) {
-									modal.style.display = "block";
+										alert("correcto!");
+								window.open('Prueba5_Felicitacion.html',"_self");
 							 } else {
 								alert("Errorrr; Prueba todo en mayusculas");
 							}
 						}
 
-									function myFunction() {
-			modal.style.display = "none";
-			}
+				
 
 			// Get the modal
 			var modal = document.getElementById("myModal");
