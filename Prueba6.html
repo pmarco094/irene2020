@@ -51,7 +51,7 @@
 							</div>
 						</div>
 					</p>
-					<button onClick="shuffle();">New Game</button></p>
+					<button onClick="shuffle();">Vuelve a empezar!</button></p>
 			</center>
 
 			<script>
@@ -124,7 +124,8 @@ function clickTile(row,column) {
 						function validate() {
 						 if ( document.getElementById("password").value == "X") {
 						 window.open('Prueba6_Felicitacion.html',"_self");}
-						 }
+						 else{
+						 
 						   if ( document.getElementById("cell11").className=="tile1" && document.getElementById("cell12").className=="tile2" && document.getElementById("cell21").className=="tile4" && document.getElementById("cell31").className=="tile7" && document.getElementById("cell32").className=="tile8") {
 								if (document.getElementById("password").value == "GRANERO"){
 								alert("Password correcto!");
@@ -135,7 +136,7 @@ function clickTile(row,column) {
 							 } else {
 							alert("No has completado el puzzle!");
 							}
-						}
+						}}
 
 
 								</script>
