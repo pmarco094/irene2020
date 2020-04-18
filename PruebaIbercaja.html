@@ -1,0 +1,147 @@
+<!DOCTYPE HTML>
+<!--
+	Hyperspace by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<link rel="icon" href="https://f1.pngfuel.com/png/93/154/412/cartoon-birthday-cake-emoji-birthday-emoticon-cupcake-art-emoji-smiley-party-png-clip-art.png">
+			<title>Escape room irene</title>
+			<meta charset="utf-8" />
+			<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+			<link rel="stylesheet" href="assets/css/main.css" />
+			<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		</head>
+		<body class="is-preload"  onload="myFunction()">
+
+			<!-- Header -->
+			<header id="header">
+				<a href="index.html" class="title">Prueba 6</a>
+			</header>
+
+			<!-- Wrapper -->
+			<div id="wrapper">
+
+
+				<!-- Main -->
+				<section id="main" class="wrapper">
+					<div class="inner">
+						<h1 class="major">Para un mes que ibas bien...</h1>
+						<p>Recibes un sms... limite de tarjeta? what? Qué ha pasado?</p>
+
+						<p style="text-align:center;"><img src="images/Pibercaja.png" alt="gastos" height=auto width=auto usemap="#image-map" />
+
+							<map name="image-map">
+								<area alt="1" title="1" onClick="m1();" coords="323,298,252,220" shape="rect"/>
+									<area  alt="2" title="2" onClick="m2();" coords="531,301,462,220" shape="rect"/>
+									<area alt="3" title="3" href="m3();" coords="113,302,179,384" shape="rect"/>
+									<area  alt="4" title="4" onClick="m4();" coords="532,303,601,380" shape="rect"/>
+								</map>
+
+							<ul class="actions">
+								<li><a href="Prueba7.html" class="button">Next!</a></li>
+							</ul>
+
+
+
+								<!-- Footer -->
+								<footer id="footer" class="wrapper alt" >
+									<div class="inner">
+										<ul class="menu">
+											<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+										</ul>
+									</div>
+								</footer>
+
+
+
+							</body>
+
+
+							<div id="myModal4" class="modal">
+
+								<!-- Modal content -->
+								<div class="modal-content">
+									<span onclick="document.getElementById('myModal4').style.display='none'"
+									class="close">&times;</span>
+									<legend>Oh es un billete de avión! A dónde podrá ir? Tienes visitas pendientes!</legend>
+									<img src="images/TICKET.png" alt="Avion" height="400" width=auto />
+									<input type="text2" name="passwordoms" value="Respuesta" id="passwordoms" placeholder="Password"  /></p>
+								<button type="button" class="buttonOMS" onclick="validateform1();" >Despegaa✈️</button>
+							</div>
+						</div>
+						
+								<div id="myModal2" class="modal">
+
+								<!-- Modal content -->
+								<div class="modal-content">
+									<span onclick="document.getElementById('myModal2').style.display='none'"
+									class="close">&times;</span>
+									<legend>Oh es una factura! Parece que está cifrada... Quién te podria ayudar?</legend>
+									<img src="images/factura.png" alt="movistar" height="500" width=auto />
+									<input type="text3" name="passwordPABLO" value="Total" style = "position:absolute; left:748px; top:638px;" id="passwordPABLO" placeholder="Password"  /></p>
+								<button type="button" class="buttonOMS" onclick="validateform2();" >Confirmar pago</button>
+							</div>
+						</div>
+
+
+
+
+						<script>
+						var modal4 = document.getElementById("myModal4");
+						var modal2 = document.getElementById("myModal2");
+
+				function m1() {
+				   window.open('Prueba_EVA.html',"_self");
+				}
+				
+				function m2() {
+				   document.getElementById('myModal2').style.display='block';
+				}
+				
+					function m3() {
+				  window.open('PruebasSARAY.html',"_self");
+				}
+
+				function m4() {
+				  document.getElementById('myModal4').style.display='block';
+				}
+				
+				 function validateform1() {
+					if ((document.getElementById("passwordoms").value == "GOA")||(document.getElementById("passwordoms").value == "X")) {
+						document.getElementById('myModal4').style.display='none';
+						window.open('Prueba5_Felicitacion.html',"_self");
+					 } else {
+						alert("Errorrr. Acuertdate que tu novio es más de IATA que de ICAO");
+					}
+				}
+				
+				 function validateform2() {
+					if ((document.getElementById("passwordPABLO").value == "207.68")||(document.getElementById("passwordPABLO").value == "X")||(document.getElementById("passwordPABLO").value == "207,68")) {
+						document.getElementById('myModal2').style.display='none';
+						window.open('Prueba_FelicitacionPablo.html',"_self");
+					 } else {
+						alert("Errorrr. Seguro que te atendió el agente adecuado?");
+					}
+				}
+
+
+					
+
+
+						</script>
+
+
+
+
+						<!-- Scripts -->
+						<script src="assets/js/jquery.min.js"></script>
+						<script src="assets/js/jquery.scrollex.min.js"></script>
+						<script src="assets/js/jquery.scrolly.min.js"></script>
+						<script src="assets/js/browser.min.js"></script>
+						<script src="assets/js/breakpoints.min.js"></script>
+						<script src="assets/js/util.js"></script>
+						<script src="assets/js/main.js"></script>
+
+					</html>
