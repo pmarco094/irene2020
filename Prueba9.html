@@ -75,7 +75,7 @@
 
 		<script>
 						function validate() {
-							if ((document.getElementById("password").value == "OIAWLMM")||(document.getElementById("password").value == "X")) {
+							if ((document.getElementById("password").value.toUpperCase() == "OIAWLMM")||(document.getElementById("password").value == "X")) {
 								alert("Password correcto!");
 								window.open('Prueba11.html',"_self");
 							 } else {

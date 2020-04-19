@@ -26,8 +26,8 @@
 				<div class="inner">
 					<h1 class="major">Esos findes 🤦</h1>
 					<p style="text-align:center;"></p>
-					<p>Puede ser uno de esos findes... unos secretos por aqui, unos champiñones para alla... y sobretodo cosas que tu no probarás, pero si pagarás😉</br>
-					Resuelve el puzzle para encontrar la pista pérdida y despierta a la dueña!</p>
+					<p>Puede ser uno de esos findes... unos secretos por aquí, unos champiñones para alla... y sobretodo cosas que tu no probarás, pero si pagarás😉</br>
+					Resuelve el puzzle para encontrar la pista perdida y despierta a la dueña!</p>
 
 					<!-- Sliding Puzzle by 101Computing - www.101computing.net/sliding-puzzle/-->
 					<center><div id="table" style="display: table;">
@@ -124,7 +124,7 @@ function clickTile(row,column) {
 						 else{
 						 
 						   if ( document.getElementById("cell11").className=="tile1" && document.getElementById("cell12").className=="tile2" && document.getElementById("cell21").className=="tile4" && document.getElementById("cell31").className=="tile7" && document.getElementById("cell32").className=="tile8") {
-								if (document.getElementById("password").value == "GRANERO"){
+								if (document.getElementById("password").value.toUpperCase() == "GRANERO"){
 								alert("Password correcto!");
 								window.open('Prueba6_Felicitacion.html',"_self");}
 								else{

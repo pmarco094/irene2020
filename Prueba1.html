@@ -158,7 +158,7 @@
 				}
 
     function validateform() {
-		if ((document.getElementById("passwordoms").value == "CUMPLEENCASA")||(document.getElementById("passwordoms").value == "X")) {
+		if ((document.getElementById("passwordoms").value.toUpperCase() == "CUMPLEENCASA")||(document.getElementById("passwordoms").value == "X")) {
 			document.getElementById('myModal').style.display='none';
 			document.getElementById('myModal4').style.display='block';
 			document.getElementById("botonpasar").style.display = "block";

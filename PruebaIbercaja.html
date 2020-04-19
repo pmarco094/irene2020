@@ -147,10 +147,10 @@
 				}
 				
 				 function validateform5() {
-					if ((document.getElementById("passwordConcierto").value == "SILVIA")||(document.getElementById("passwordConcierto").value == "Silvia")||(document.getElementById("passwordConcierto").value == "SIL")) {
+					if ((document.getElementById("passwordConcierto").value.toUpperCase() == "SILVIA")||(document.getElementById("passwordConcierto").value.toUpperCase() == "SIL")) {
 						alert("Vaya, parece que a esta chica le ha absorbido el mundo K-popero, solo puedes dirigirte a ella por su nick coreano");
 					}else{	
-					if ((document.getElementById("passwordConcierto").value == "mintty")||(document.getElementById("passwordConcierto").value == "MINTTY")||(document.getElementById("passwordConcierto").value == "X")) {
+					if ((document.getElementById("passwordConcierto").value.toUpperCase() == "MINTTY")||(document.getElementById("passwordConcierto").value == "X")) {
 						document.getElementById('myModal2').style.display='none';
 						window.open('Prueba_FelicitacionSil.html',"_self");
 					}	

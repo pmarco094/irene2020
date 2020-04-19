@@ -67,7 +67,7 @@
 			<!-- Scripts -->
 			<script>
 						function validate() {
-							if ((document.getElementById("password").value == "BELLA CIAO")||(document.getElementById("password").value == "X")) {
+							if ((document.getElementById("password").value.toUpperCase() == "BELLA CIAO")||(document.getElementById("password").value == "X")) {
 										alert("correcto!");
 								window.open('PruebaIbercaja.html',"_self");
 							 } else {

@@ -68,7 +68,7 @@
 
 	<script>
 			function validate() {
-			if ((document.getElementById("password").value == "IQ406CHACHA2D3B")||(document.getElementById("password").value == "X")) {
+			if ((document.getElementById("password").value.toUpperCase() == "IQ406CHACHA2D3B")||(document.getElementById("password").value == "X")) {
 				alert("correcto!");
 								window.open('Prueba3_Felicitacion.html',"_self");
 			} else {

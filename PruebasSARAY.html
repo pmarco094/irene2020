@@ -105,7 +105,7 @@
 							break;
 
 							 case "N" :
-								document.getElementById("PREGUNTA").textContent="Con la N; Personaje que destruye el último Horrocrux (serpiente).";
+								document.getElementById("PREGUNTA").textContent="Con la N; Personaje que destruye el último Horrocrux.";
 							break;
 
 							 case "M" :
@@ -137,7 +137,7 @@
 				function validate() {
 					switch(active) {
 					  case "I" :
-							if ((document.getElementById("password").value == "INVISIBILIDAD")||(document.getElementById("password").value == "X")) {
+							if ((document.getElementById("password").value.toUpperCase() == "INVISIBILIDAD")||(document.getElementById("password").value == "X")) {
 							document.getElementById(active).style.backgroundColor="green";
 							ok[0]='s';
 							} else {
@@ -147,7 +147,7 @@
 
 
 					  case "B" :
-							if ((document.getElementById("password").value == "BLUDGER")||(document.getElementById("password").value == "X")) {
+							if ((document.getElementById("password").value.toUpperCase() == "BLUDGER")||(document.getElementById("password").value == "X")) {
 							document.getElementById(active).style.backgroundColor="green";
 							ok[1]='s';
 							} else {
@@ -156,7 +156,7 @@
 							break;
 
 						 case "D" :
-							if ((document.getElementById("password").value == "DUMBLEDORE")||(document.getElementById("password").value == "X")) {
+							if ((document.getElementById("password").value.toUpperCase() == "DUMBLEDORE")||(document.getElementById("password").value == "X")) {
 							document.getElementById(active).style.backgroundColor="green";
 							ok[2]='s';
 							} else {
@@ -165,7 +165,7 @@
 							break;
 
 						case "G" :
-								if ((document.getElementById("password").value == "GRANGER")||(document.getElementById("password").value == "X")) {
+								if ((document.getElementById("password").value.toUpperCase() == "GRANGER")||(document.getElementById("password").value == "X")) {
 							document.getElementById(active).style.backgroundColor="green";
 							ok[3]='s';
 							} else {
@@ -174,7 +174,7 @@
 							break;
 
 						 case "H" :
-							if ((document.getElementById("password").value == "HAGRID")||(document.getElementById("password").value == "X")) {
+							if ((document.getElementById("password").value.toUpperCase() == "HAGRID")||(document.getElementById("password").value == "X")) {
 							document.getElementById(active).style.backgroundColor="green";
 							ok[4]='s';
 							} else {
@@ -183,7 +183,7 @@
 							break;
 
 						 case "K" :
-							if ((document.getElementById("password").value == "KILLIECHASSIE")||(document.getElementById("password").value == "X")) {
+							if ((document.getElementById("password").value.toUpperCase() == "KILLIECHASSIE")||(document.getElementById("password").value == "X")) {
 							document.getElementById(active).style.backgroundColor="green";
 							ok[5]='s';
 							} else {
@@ -192,7 +192,7 @@
 							break;
 
 						 case "N" :
-							if ((document.getElementById("password").value == "NEVILLE")||(document.getElementById("password").value == "X")) {
+							if ((document.getElementById("password").value.toUpperCase() == "NEVILLE")||(document.getElementById("password").value == "X")) {
 							document.getElementById(active).style.backgroundColor="green";
 							ok[6]='s';
 							} else {
@@ -201,7 +201,7 @@
 							break;
 
 						 case "M" :
-							if ((document.getElementById("password").value == "MUGGLE")||(document.getElementById("password").value == "X")) {
+							if ((document.getElementById("password").value.toUpperCase() == "MUGGLE")||(document.getElementById("password").value == "X")) {
 							document.getElementById(active).style.backgroundColor="green";
 							ok[7]='s';
 							} else {
@@ -210,7 +210,7 @@
 							break;
 
 						 case "R" :
-							if ((document.getElementById("password").value == "RAVERCLAW")||(document.getElementById("password").value == "X")) {
+							if ((document.getElementById("password").value.toUpperCase() == "RAVENCLAW")||(document.getElementById("password").value == "X")) {
 							document.getElementById(active).style.backgroundColor="green";
 							ok[8]='s';
 							} else {
@@ -220,7 +220,7 @@
 
 
 						 case "W" :
-								if ((document.getElementById("password").value == "WARREN")||(document.getElementById("password").value == "X")) {
+								if ((document.getElementById("password").value.toUpperCase() == "WARREN")||(document.getElementById("password").value == "X")) {
 							document.getElementById(active).style.backgroundColor="green";
 							ok[9]='s';
 							} else {
@@ -229,7 +229,7 @@
 							break;
 
 						 case "T" :
-								if ((document.getElementById("password").value == "TOM")||(document.getElementById("password").value == "X")) {
+								if ((document.getElementById("password").value.toUpperCase() == "TOM")||(document.getElementById("password").value == "X")) {
 							document.getElementById(active).style.backgroundColor="green";
 							ok[10]='s';
 							} else {

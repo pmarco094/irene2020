@@ -63,7 +63,7 @@
 		
 			<script>
 						function validate() {
-							if ((document.getElementById("password").value == "MONTENEGRO")||(document.getElementById("password").value == "X")) {
+							if ((document.getElementById("password").value.toUpperCase() == "MONTENEGRO")||(document.getElementById("password").value == "X")) {
 								window.open('Prueba7_Felicitacion.html',"_self");
 							 } else {
 								alert("Errorrr");
