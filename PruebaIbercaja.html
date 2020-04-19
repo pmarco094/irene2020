@@ -37,6 +37,7 @@
 									<area  alt="2" title="2" onClick="m2();" coords="531,301,462,220" shape="rect"/>
 									<area alt="3" title="3" onClick="m3();" coords="113,302,179,384" shape="rect"/>
 									<area  alt="4" title="4" onClick="m4();" coords="532,303,601,380" shape="rect"/>
+									<area  alt="5" title="5" onClick="m5();" coords="391,140,461,219" shape="rect"/>
 								</map>
 
 							<ul class="actions">
@@ -84,6 +85,20 @@
 								<button type="button" class="buttonOMS" onclick="validateform2();" >Confirmar pago</button>
 							</div>
 						</div>
+						
+						
+						<div id="myModal5" class="modal">
+
+								<!-- Modal content -->
+								<div class="modal-content">
+									<span onclick="document.getElementById('myModal5').style.display='none'"
+									class="close">&times;</span>
+									<legend>Dos entradas? Para quien era la otra?</legend>
+									<img src="images/entrada.png" alt="EntradaConcierto" height=auto width="800" />
+									<input type="text2" name="passwordConcierto" value="Nombre acompañante"  id="passwordConcierto" placeholder="Password"  /></p>
+								<button type="button" class="buttonOMS" onclick="validateform5();" >Comprobar!</button>
+							</div>
+						</div>
 
 
 
@@ -91,6 +106,7 @@
 						<script>
 						var modal4 = document.getElementById("myModal4");
 						var modal2 = document.getElementById("myModal2");
+						var modal5 = document.getElementById("myModal5");
 
 				function m1() {
 				   window.open('Prueba_EVA.html',"_self");
@@ -106,6 +122,10 @@
 
 				function m4() {
 				  document.getElementById('myModal4').style.display='block';
+				}
+				
+				function m5() {
+				  document.getElementById('myModal5').style.display='block';
 				}
 				
 				 function validateform1() {
@@ -124,6 +144,19 @@
 					 } else {
 						alert("Errorrr. Seguro que te atendió el agente adecuado?");
 					}
+				}
+				
+				 function validateform5() {
+					if ((document.getElementById("passwordConcierto").value == "SILVIA")||(document.getElementById("passwordConcierto").value == "Silvia")||(document.getElementById("passwordConcierto").value == "SIL")) {
+						alert("Vaya, parece que a esta chica le ha absorbido el mundo K-popero, solo puedes dirigirte a ella por su nick coreano");
+					}else{	
+					if ((document.getElementById("passwordConcierto").value == "mintty")||(document.getElementById("passwordConcierto").value == "MINTTY")||(document.getElementById("passwordConcierto").value == "X")) {
+						document.getElementById('myModal2').style.display='none';
+						window.open('Prueba_FelicitacionSil.html',"_self");
+					}	
+					else {
+						alert("Errorrr. Seguro que has buscado bien?");
+					}}
 				}
 
 
