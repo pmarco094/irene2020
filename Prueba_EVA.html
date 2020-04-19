@@ -119,7 +119,8 @@ function clickTile(row,column) {
 								</p>
 								<script>
 						function validate() {
-						 if ( document.getElementById("password").value == "X") {
+						 if ((document.getElementById("password").value == "X")||(document.getElementById("password").value.toUpperCase() == "GRANERO")) {
+						 alert("Password correcto!  Si, el puzzle es imposible.");
 						 window.open('Prueba6_Felicitacion.html',"_self");}
 						 else{
 						 
