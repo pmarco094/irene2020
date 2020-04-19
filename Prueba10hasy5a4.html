@@ -41,7 +41,7 @@
 								</map>
 
 							<ul class="actions">
-								<li><a href="Prueba7.html" class="button">Next!</a></li>
+								<li><a  class="button" onClick="siguiente();" >Next!</a></li>
 							</ul>
 
 
@@ -104,34 +104,41 @@
 
 
 						<script>
+						var ok = new Array(5);
+						
 						var modal4 = document.getElementById("myModal4");
 						var modal2 = document.getElementById("myModal2");
 						var modal5 = document.getElementById("myModal5");
 
 				function m1() {
-				   window.open('Prueba_EVA.html',"_self");
+				ok[0]='s';
+				   window.open('Prueba_EVA.html');
 				}
 				
 				function m2() {
+				ok[1]='s';
 				   document.getElementById('myModal2').style.display='block';
 				}
 				
 					function m3() {
-				  window.open('PruebasSARAY.html',"_self");
+					ok[2]='s';
+				  window.open('PruebasSARAY.html');
 				}
 
 				function m4() {
+				ok[3]='s';
 				  document.getElementById('myModal4').style.display='block';
 				}
 				
 				function m5() {
+				ok[4]='s';
 				  document.getElementById('myModal5').style.display='block';
 				}
 				
 				 function validateform1() {
 					if ((document.getElementById("passwordoms").value == "GOA")||(document.getElementById("passwordoms").value == "X")) {
 						document.getElementById('myModal4').style.display='none';
-						window.open('Prueba5_Felicitacion.html',"_self");
+						window.open('Prueba5_Felicitacion.html');
 					 } else {
 						alert("Errorrr. Acuertdate que tu novio es más de IATA que de ICAO");
 					}
@@ -140,7 +147,7 @@
 				 function validateform2() {
 					if ((document.getElementById("passwordPABLO").value == "207.68")||(document.getElementById("passwordPABLO").value == "X")||(document.getElementById("passwordPABLO").value == "207,68")) {
 						document.getElementById('myModal2').style.display='none';
-						window.open('Prueba_FelicitacionPablo.html',"_self");
+						window.open('Prueba_FelicitacionPablo.html');
 					 } else {
 						alert("Errorrr. Seguro que te atendió el agente adecuado?");
 					}
@@ -152,11 +159,22 @@
 					}else{	
 					if ((document.getElementById("passwordConcierto").value.toUpperCase() == "MINTTY")||(document.getElementById("passwordConcierto").value == "X")) {
 						document.getElementById('myModal2').style.display='none';
-						window.open('Prueba_FelicitacionSil.html',"_self");
+						window.open('Prueba_FelicitacionSil.html');
 					}	
 					else {
 						alert("Errorrr. Seguro que has buscado bien?");
-					}}
+					}}}
+					
+					function siguiente(){
+					
+					if(ok.join("")=="sssss") {
+						window.open('Prueba75rve15w1.html',"_self");
+						}
+						else{
+							alert("Ya sabes que es cada pago?!");
+						}
+	
+				
 				}
 
 

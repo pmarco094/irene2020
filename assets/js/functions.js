@@ -192,7 +192,7 @@ function startTimer() {
 }
 
 function endGame() {
-    window.open('Prueba11_Felicitacion.html',"_self");
+    window.open('Prueba11_F15GA15.html',"_self");
 	clearInterval(interval);
     totalGameTime = timer.innerHTML;
 
